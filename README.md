@@ -10,4 +10,8 @@ This app is based MVVM architecture.
  - [Glide](https://bumptech.github.io/glide/doc/generatedapi.html) - An image loading framework for Android that wraps media decoding, memory and disk caching, and resource pooling.
  - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - Objects which can be observed by UI about changes. 
  - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores and manages UI related data in a lifecycle aware way.
- -
+
+# ScreenShots
+![](screenshots/homescreen.jpeg)
+
+![](screenshots/detailscreen.jpeg)
