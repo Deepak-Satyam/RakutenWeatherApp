@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEFEF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/title_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="_location"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/title_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_location"
+                android:layout_centerHorizontal="true"
+                android:text="_region"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <!--<TextView
+                android:id="@+id/title_coord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_region"
+                android:layout_centerHorizontal="true"
+                android:text="_region"
+                android:textColor="#000000"
+                android:textSize="18sp" />-->
+
+            <ImageView
+                android:id="@+id/icon_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/title_region"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="20dp" />
+
+            <TextView
+                android:id="@+id/title_temper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon_image"
+                android:layout_centerHorizontal="true"
+                android:text="_temper"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/title_wtdescribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_temper"
+                android:layout_centerHorizontal="true"
+                android:text="_temper"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/noOfDays"
+                android:layout_below="@id/title_wtdescribe"
+                style="@style/CustomStyle.Text.Section"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:text="@string/section_next_days" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/noOfDays"
+                android:id="@+id/dayList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                tools:itemCount="7"
+                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_day"
+                tools:orientation="vertical" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

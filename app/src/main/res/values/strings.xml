@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Rakuten WeatherApp</string>
+    <string name="sign_degree" translatable="false">°</string>
+    <string name="section_next_days">Next 7 days</string>
+</resources>

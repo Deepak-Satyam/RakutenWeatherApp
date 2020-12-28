@@ -1,0 +1,55 @@
+<resources>
+    <style name="CustomStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CustomStyle.Icon">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:layout_width">34dp</item>
+    </style>
+    <style name="CustomStyle.Icon.Clickable" parent="CustomStyle.Icon">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="CustomStyle.Text.Section" parent="CustomStyle.Text.Primary">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="CustomStyle.ImageView">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">50dp</item>
+    </style>
+    <style name="CustomStyle.Text.Secondary" parent="CustomStyle.Text">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="CustomStyle.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+    </style>
+    <style name="CustomStyle.Text" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="CustomStyle.Text.Primary" parent="CustomStyle.Text">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="CustomStyle.Text.Header" parent="CustomStyle.Text.Primary">
+        <item name="android:textSize">19sp</item>
+        <item name="android:letterSpacing">0.06</item>
+    </style>
+
+</resources>

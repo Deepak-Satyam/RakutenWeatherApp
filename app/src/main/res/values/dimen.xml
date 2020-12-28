@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Default values  -->
+
+    <!--  Specific values  -->
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="card_elevation">0dp</dimen>
+    <dimen name="activity_horizontal_margin">14dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="day_margin">12dp</dimen>
+</resources>
